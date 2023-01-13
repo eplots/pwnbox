@@ -1,26 +1,6 @@
 # Pwnbox
 
-![htb screenshot](images/htb_screenshot.png?raw=true "Pwnbox")
-
-Want to replicate Hack the Box very own Pwnbox? Follow the guide below!
-This should give you the "look and feel" of pwnbox used by Hack The Box.
-Everything shown here can be done in your own Parrot OS, whether it is VM or main OS.
-However, I suggest you look into what each command does, where it goes, and how you can go about customizing it to your own taste. For me, whenever I ssh into my Parrot machine, it gives me fun hackthebox logo. Go on, make it your own!
-
-```bash
-
-  █  █         ▐▌     ▄█▄ █          ▄▄▄▄
-  █▄▄█ ▀▀█ █▀▀ ▐▌▄▀    █  █▀█ █▀█    █▌▄█ ▄▀▀▄ ▀▄▀
-  █  █ █▄█ █▄▄ ▐█▀▄    █  █ █ █▄▄    █▌▄█ ▀▄▄▀ █▀█
-
-  P  E  N   -   T  E  S  T  I  N  G     L  A  B  S
-
-  what the box?
-```
-
-## Setup
-
-Clone this repo, then run `setup.sh` file to install pwnbox
+## Heavy modified to work with my "fresh install new setup" scripts.
 
 ## Setup OpenVPN
 
@@ -32,15 +12,7 @@ We also need to add your vpn file to your /etc/openvpn location:
 
 Make sure you rename your file to `.conf`. Then you can start your VPN like you would normally do.
 
-## Update theme
-
-Go to the top menu bar and choose:
-
-System -> Preferences -> Look and Feel -> Appearance
-
 You should now see a theme called "HackTheBox". Select it and select "Apply Background".
-
-> At this point, you should have most of the Pwnbox 'look and feel'. However, if you want to further customize it, keep following allong.
 
 ## Customizing panels
 
@@ -73,11 +45,3 @@ Click on the bash icon to the left, and a window should pop up asking you to sel
     - Delay: 0
 
     Plank will now startup whenever you reboot your machine.
-
-# Conclusion
-
-> This should be it for the setup! The actual pwnbox has some extra icons on the desktop such as a shortcut to "bloodhound", "burpsuite", and others. There's even a MacOS launcher bar on the bottom. I'm going to leave that up to you to add. 
-
-> I highly suggest adding VNC support if needed. I am currently running tigerVNC on my Parrot machine and it works great! 
-
-> Otherwise, that finishes that for this tutorial.
